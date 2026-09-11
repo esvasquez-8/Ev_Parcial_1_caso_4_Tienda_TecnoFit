@@ -2,9 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login TecnoFit</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<header>
+    <h1>Tienda TecnoFit</h1>
+    <a href="index.html">HOME</a>
+    <a href="registro.html" class="btn-login">REGISTRARSE</a>
+</header>
+
+<main>
+    <section class="contenedor-login">
+        <article>
+            <h2>Inicio de sesión</h2>
+
+            <form id="formularioLogin">
+
+                <div class="grupo">
+                    <label for="correoLogin">CORREO</label>
+                    <input type="email" id="correoLogin" required>
+                    <span class="mensaje-error" id="errorCorreoLogin"></span>
+                </div>
+
+                <div class="grupo">
+                    <label for="passwordLogin">CONTRASEÑA</label>
+                    <input type="password" id="passwordLogin" required>
+                    <span class="mensaje-error" id="errorPasswordLogin"></span>
+                </div>
+
+                <button type="submit" id="btnIniciarSesion">INICIAR SESIÓN</button>
+                <span class="mensaje-error" id="errorGeneralLogin"></span>
+            </form>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <div class="contenido-footer">
+        <p>2026 TecnoFit Inc.</p>
+    </div>
+</footer>
 </body>
 </html>
