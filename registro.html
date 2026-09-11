@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro-TecnoFit</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">HOME</a>
+        <h1>Tienda TecnoFit</h1>
+        <a href="login.html" class="btn-login">INICIAR SESIÓN</a>
+    </nav>
+</header>
+
+<main>
+    <section class="registro">
+        <article>
+            <h2>Registro de usuarios</h2>
+            <form id="Formulario del registro">
+
+                <div class="grupo--campo">
+                    <label for="nombreCompleto">NOMBRE COMPLETO</label>
+                    <input type="text" id="nombreCompleto" name="nombreCompleto" maxlength="80" placeholder="Nombre Completo" required>
+                    <span class="mensaje-error" id="errorNombre"></span>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="correo">CORREO</label>
+                    <input type="email" id="correo" name="correo" maxlength="60" placeholder="usuario@duoc.cl o @profesor.duoc.cl" >
+                    <span class="mensaje-error" id="errorCorreo"></span>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="password">CONTRASEÑA</label>
+                    <input type="password" id="password" name="password" placeholder="Minimo 8 caracteres" required>
+                    <span class="mensaje-error" id="errorPassword"></span>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="confirmarPassword">CONFIRMAR CONTRASEÑA</label>
+                    <input type="password" id="confirmarPassword" name="confirmarPassword">
+                    <span class="mensaje-error" id="errorConfirmar"></span>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="telefono">TELÉFONO (opcional)</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="debe tener exactamente 9 dígitos.">
+                    <span class="mensaje-error" id="errorTelefono"></span>
+                </div>
+
+                <div class="cabecera-mascotas">
+                    <h3>REGISTRO DE DISPOSETIVOS</h3>
+                </div>
+
+                <div id="contenedorDispositivos">
+                    <div class="item-dispositivo">
+                        <div class="grupo-campo">
+                            <label>TIPO DE DISPOSITIVO</label>
+                            <select name="tipoDispositivo" class="tipo-dispositivo">
+                                <option value="" disabled selected>-- Seleccione un tipo --</option>
+                                <option value="Smartwatch">Smartwatch</option>
+                                <option value="Banda Deportiva">Banda Deportiva</option>
+                                <option value="Ciclocomputador">Ciclocomputador</option>
+                                <option value="Audífonos">Audífonos</option>
+                            </select>
+                            <span class="mensaje-error error-tipo"></span>
+                        </div>
+
+                        <div class="grupo-campo-fila">
+                            <div class="campo-serie">
+                                <label>NÚMERO DE SERIE (12 caracteres alfanuméricos)</label>
+                                <input type="text" name="numeroSerie[]" class="serie-dispositivo" maxlength="12" placeholder="Ej: AB12CD34EF56">
+                                <span class="mensaje-error error-serie"></span>
+                            </div>
+                            <button type="button" class="btn-eliminar">ELIMINAR</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <button type="button" id="btnAñadirDispositivo">AÑADIR DISPOSITIVO</button>
+                <button type="submit" id="btnRegistrar">REGISTRARSE</button>
+
+            </form>
+        </article>
+    </section>
+</main>
+
+</body>
+</html>
