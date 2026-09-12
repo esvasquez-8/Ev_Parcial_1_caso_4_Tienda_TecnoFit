@@ -1,0 +1,205 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+    color: #222222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    background-color: #20B2AA;
+    color: white;
+    text-align: left;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.texto-encabezado {
+    min-width: 0;
+}
+
+
+.logo {
+    width: 200px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+header h1 {
+    font-size: 28px;
+    margin: 0 0 15px;
+}
+
+header a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+main {
+    flex: 1;
+    width: 90%;
+    max-width: 750px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #cccccc;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+p, .lista-dispositivos {
+    line-height: 1.6;
+}
+
+.lista-dispositivos li {
+    margin-bottom: 8px;
+}
+
+.contenedor-login {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.grupo, .grupo-campo, .grupo--campo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.mensaje-error {
+    display: block;
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.item-dispositivo {
+    background-color: #f2f2f2;
+    border: 1px solid #bbbbbb;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.campo-serie {
+    margin-bottom: 10px;
+}
+
+button, .boton {
+    display: inline-block;
+    background-color: #20B2AA;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover, .boton:hover {
+    background-color: #20B2AA;
+}
+
+.btn-eliminar {
+    background-color: #c9302c;
+}
+
+.btn-eliminar:hover {
+    background-color: #a02020;
+}
+
+#btnRegistrar, #btnIniciarSesion {
+    width: 100%;
+}
+
+footer {
+    background-color: #20B2AA;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.contenido-footer p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .header {
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .logo {
+        width: 110px;
+    }
+
+    main {
+        width: 95%;
+        padding: 15px;
+    }
+
+    header a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    button, .boton {
+        width: 100%;
+    }
+}

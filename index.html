@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +8,57 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body style = "">
-<header class="header">
-    <h1><strong>Tienda TecnoFit</strong></h1>
+<body>
 
-    <nav>
-        <ul class= "nav-links">
-            <li><a href="registro.html">Registro</a></li>
-            <li><a href="login.html">Login</a></li>
-        </ul>
-    </nav>
+<header class="header">
+    <div class="texto-encabezado">
+        <h1>Tienda TecnoFit</h1>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" aria-current="page">Inicio</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <img src="img/logo-tecnofit.png" alt="Logo de TecnoFit" class="logo">
 </header>
+
+<main>
+    <section>
+        <h2>Bienvenido a TecnoFit</h2>
+        <p>Somos una tienda de dispositivos tecnológicos para el deporte.
+            Aquí puedes crear tu cuenta y registrar los dispositivos que usas para entrenar.</p>
+    </section>
+
+    <section>
+        <h2>Nuestros dispositivos</h2>
+        <ul class="lista-dispositivos">
+            <li>Smartwatch</li>
+            <li>Banda Deportiva</li>
+            <li>Ciclocomputador</li>
+            <li>Audífonos</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Registra tu cuenta</h2>
+        <p>Completa tus datos con tu correo @duoc.cl o @profesor.duoc.cl.
+            Para añadir un dispositivo la contraseña debe contener estos caracteres (#, $, %, &),
+            necesitas su tipo y un número de serie de 12 caracteres alfanuméricos.</p>
+        <a href="registro.html" class="boton">Registrarse</a>
+        <p>Si ya tienes una cuenta, puedes <a href="login.html">iniciar sesión aquí</a>.</p>
+    </section>
+</main>
+
+<footer>
+    <div class="contenido-footer">
+        <p>2026 TecnoFit</p>
+        <p>Desarrollado por Estevan Vasquez y Amaro Madrid.</p>
+    </div>
+</footer>
 
 </body>
 </html>
